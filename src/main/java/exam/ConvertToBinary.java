@@ -3,7 +3,22 @@ package exam;
 public class ConvertToBinary {
 
   public String toBinary(final int n) {
-    //TODO write your code here to achieve the desired result as explained in Readme file for this problem.
-    return "";
+   int number = 0;
+   int cnt = 0;
+    while(n!=0)
+    {
+      int rem=n%2;
+      double c = Math.pow(10,cnt);
+      number += rem * c;
+      n/=2;
+      cnt++;
+    }
+    
+    return "number";
+  }
+  public static void main (string[]args)
+  {
+    int n=35;
+    system.out.println(decimaltoBinary(n));
   }
 }
